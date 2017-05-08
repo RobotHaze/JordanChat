@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SignInViewController: UIViewController {
-
+    
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -19,22 +19,38 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-    
+        
+        
     }
-
+    
     @IBAction func turnUpTapped(_ sender: Any) {
         
         FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
             print("We tried to sign in")
             if error != nil {
                 print("Hey we have an error:\(error)")
+                
+                FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+                    print("We tried to create a user")
+                    
+                    if error != nil {
+                        print("Hey we have an error:\(error)")
+                        
+                    } else {
+                        
+                        print("Created user successfully!")
+                        self.performSegue(withIdentifier: "signInSegue", sender: nil)
+                        
+                    }
+                })
+                
             } else {
                 print("Signed in successfully")
+                self.performSegue(withIdentifier: "signInSegue", sender: nil)
             }
         })
         
     }
-
+    
 }
 
