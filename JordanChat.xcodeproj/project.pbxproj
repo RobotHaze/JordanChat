@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68DD8F7350BBD94FC95709C2 /* Pods_JordanChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5255EB7F12DEAF73A8AF4519 /* Pods_JordanChat.framework */; };
+		B134FC0D1EC26B9E0080CDE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134FC0C1EC26B9E0080CDE6 /* User.swift */; };
 		B14369F81EBD16B4003EC972 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14369F71EBD16B4003EC972 /* SnapsViewController.swift */; };
 		B1B158691EC11DD800E2578D /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B158681EC11DD800E2578D /* PictureViewController.swift */; };
 		B1B1586B1EC1296C00E2578D /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1586A1EC1296C00E2578D /* SelectUserViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3D8D6A989B1A905C98A70D6C /* Pods-JordanChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JordanChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JordanChat/Pods-JordanChat.debug.xcconfig"; sourceTree = "<group>"; };
 		5255EB7F12DEAF73A8AF4519 /* Pods_JordanChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JordanChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B134FC0C1EC26B9E0080CDE6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B14369F61EBD161F003EC972 /* JordanChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JordanChat.entitlements; sourceTree = "<group>"; };
 		B14369F71EBD16B4003EC972 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		B1B158681EC11DD800E2578D /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B134FC0E1EC26BC40080CDE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1D09DB81EB7E1F000B91E77 /* SignInViewController.swift */,
+				B14369F71EBD16B4003EC972 /* SnapsViewController.swift */,
+				B1B158681EC11DD800E2578D /* PictureViewController.swift */,
+				B1B1586A1EC1296C00E2578D /* SelectUserViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B134FC0F1EC26BE10080CDE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B134FC0C1EC26B9E0080CDE6 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B1D09DAA1EB7E1F000B91E77 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +108,11 @@
 		B1D09DB51EB7E1F000B91E77 /* JordanChat */ = {
 			isa = PBXGroup;
 			children = (
+				B134FC0E1EC26BC40080CDE6 /* ViewControllers */,
+				B134FC0F1EC26BE10080CDE6 /* Models */,
+				B1D09DBA1EB7E1F000B91E77 /* Main.storyboard */,
 				B14369F61EBD161F003EC972 /* JordanChat.entitlements */,
 				B1D09DB61EB7E1F000B91E77 /* AppDelegate.swift */,
-				B1D09DB81EB7E1F000B91E77 /* SignInViewController.swift */,
-				B14369F71EBD16B4003EC972 /* SnapsViewController.swift */,
-				B1B158681EC11DD800E2578D /* PictureViewController.swift */,
-				B1B1586A1EC1296C00E2578D /* SelectUserViewController.swift */,
-				B1D09DBA1EB7E1F000B91E77 /* Main.storyboard */,
 				B1D09DBD1EB7E1F000B91E77 /* Assets.xcassets */,
 				B1D09DBF1EB7E1F000B91E77 /* LaunchScreen.storyboard */,
 				B1D09DC21EB7E1F000B91E77 /* Info.plist */,
@@ -234,6 +253,7 @@
 			files = (
 				B1D09DB91EB7E1F000B91E77 /* SignInViewController.swift in Sources */,
 				B1B158691EC11DD800E2578D /* PictureViewController.swift in Sources */,
+				B134FC0D1EC26B9E0080CDE6 /* User.swift in Sources */,
 				B1B1586B1EC1296C00E2578D /* SelectUserViewController.swift in Sources */,
 				B1D09DB71EB7E1F000B91E77 /* AppDelegate.swift in Sources */,
 				B14369F81EBD16B4003EC972 /* SnapsViewController.swift in Sources */,
