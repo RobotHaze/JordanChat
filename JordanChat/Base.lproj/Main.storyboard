@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="128.18590704647679"/>
         </scene>
-        <!--Snaps View Controller-->
+        <!--Snaps-->
         <scene sceneID="57y-8U-uj6">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="0zU-Hd-Kja" customClass="SnapsViewController" customModule="JordanChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                             <constraint firstItem="Uk9-81-UCL" firstAttribute="top" secondItem="WT7-lP-wSq" secondAttribute="bottom" id="iie-94-HRo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CK4-bT-vNe">
+                    <navigationItem key="navigationItem" title="Snaps" id="CK4-bT-vNe">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="OiE-Tz-gxw">
                             <connections>
                                 <action selector="logoutTapped:" destination="0zU-Hd-Kja" id="8QX-7x-msZ"/>
